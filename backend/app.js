@@ -6,6 +6,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 const connectMongoDb = require("./init/mongodb");
 const authRoutes = require("./routes/authRoutes");
+const noteRoutes = require("./routes/noteRoutes");
 const errorHandler = require("./middlewares/errorMiddleware");
 
 //init app
@@ -26,6 +27,7 @@ app.use(cors({
 
 //Routes
 app.use("/api/v1/auth", authRoutes);
+app.use("/api/v1/note", noteRoutes);
 
 //Error Handler
 app.use(errorHandler);
