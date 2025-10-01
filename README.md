@@ -17,3 +17,35 @@ The documentation is kept up-to-date and includes:
 ## Tech Stack
 - Backend: Node.js, Express.js, MongoDB, Mongoose, JWT
 - API Docs: Postman
+
+## Installation
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/Piyush9477/REST-API
+```
+
+2. **Navigate to the project folder**
+```bash
+cd REST-API
+```
+
+3. **Install dependencies**
+```bash
+cd backend
+npm install
+```
+
+4. **Create a .env file inside the backend folder**
+Add your credentials and environment variables.
+```.env
+PORT = 8000
+CONNECTION_URL = your_database_url
+JWT_SECRET= your_jwt_secret_key
+```
+
+## Run the project
+**Start the backend**
+```bash
+npm run dev
+```
