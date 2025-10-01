@@ -1,4 +1,5 @@
 const express = require("express");
+const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser")
 const cors = require("cors");
@@ -25,6 +26,7 @@ app.use(cors({
   origin: 'http://localhost:5173',
   credentials: true, 
 }));
+app.use(morgan('dev'));
 
 //Routes
 app.use("/api/v1/auth", authRoutes);
